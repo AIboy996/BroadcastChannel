@@ -1,7 +1,7 @@
 :root {
-  --background-color: #f4f1ec;
+  --background-color: white;
   --foreground-color: #000000;
-  --highlight-color: orangered;
+  --highlight-color: rgb(248, 109, 133);
   --box-border-radius: 3px;
   --media-border-radius: 8px;
   --dot-size: 8px;
@@ -104,19 +104,12 @@ a.item-link:hover {
 }
 
 #container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0px auto 0px auto;
+  width: 50%;
+  max-width: 400px;
+  margin: auto;
   display: flex;
-}
-
-#main-container {
-  flex: 1;
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  margin-right: 20px;
-  border-right: 1px solid var(--border-color);
+  justify-content: center;
+  align-items: center;
 }
 
 #header {
@@ -631,9 +624,9 @@ audio::-webkit-media-controls-panel {
 }
 
 .content img {
-  max-width: calc(100% - 1px);
+  display: block;
+  max-width: 70%;
   max-height: initial;
-  border-radius: var(--media-border-radius);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadows);
 }
